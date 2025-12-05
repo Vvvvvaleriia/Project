@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знайди пару</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="menu" class="menu">
+        <h2>Memory game</h2>
+        <p>Оберіть складність:</p>
+        <select id="difficulty">
+            <option value="easy">Легко (4x4)</option>
+            <option value="medium">Середньо (10x10)</option>
+            <option value="hard">Складно (14x14)</option>
+        </select>
+        <button id="startGame">Почати гру</button>
+    </div>
+
+   <div class="wrap">
+    <h1>Memory game</h1>
+
+    <div class="controls">
+        <div class="stat">Ходи: <span id="moves">0</span></div>
+        <div class="stat">Пари: <span id="matches">0</span>/<span id="pairs">8</span></div>
+        <div class="stat">Час: <span id="timer">00:00</span></div>
+        <button id="restart">Перезапустити</button>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <div id="win" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close"></span>
+            <h2>🎉Вітаємо🎉</h2>
+            <p>Ти пройшов гру</p>
+            <button id="playAgain">Грати ще раз</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Натисни на картку та шукай їй пару!
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
